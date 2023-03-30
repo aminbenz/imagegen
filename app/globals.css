@@ -1,0 +1,104 @@
+:root {
+  color-scheme: dark light;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    @apply appearance-none;
+  }
+
+  input[type="file"] {
+    @apply appearance-none;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #3b3e44;
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #727780;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+select {
+  background-color: inherit;
+}
+
+div[dir="rtl"] {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-gradient-blue {
+  background: linear-gradient(to right, #2563eb, #6a91fd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-gradient-sky {
+  background: linear-gradient(to right, #25bdeb, #6adbfd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-gradient-orange {
+  background: linear-gradient(to right, #eb9525, #fdc26a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.prompt-label {
+  flex-grow: 1;
+}
+
+.btn.btn-generate {
+  min-width: 100px;
+}
+
+.sugg {
+  padding: 50px 0;
+}
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+}
+
+.img-container {
+  /* width: 300px; */
+  height: 270px;
+  position: relative;
+  overflow: hidden;
+}
+
+img {
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+.generate {
+  cursor: help;
+  transition: color 0.3s ease;
+}
+.generate:hover {
+  color: #6a91fd;
+}

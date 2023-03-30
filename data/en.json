@@ -1,0 +1,36 @@
+{
+  "INDEX": {
+    "app_name": "ImageGen",
+    "home_page": {
+      "children": {
+        "t1": "Transform Your",
+        "t2": "Vision",
+        "t3": "into",
+        "t4": "Reality",
+        "t5": "with",
+        "t6": "AI",
+        "t7": "-Generated Images"
+      },
+      "description": "With our advanced AI technology, you can easily and quickly generate high-quality images that perfectly match your vision"
+    },
+    "chip": "Created with love by",
+    "navigation": [
+      {
+        "name": "Image Generator",
+        "href": "/image-gen"
+      },
+      {
+        "name": "About",
+        "href": "/about"
+      },
+      {
+        "name": "GitHub",
+        "href": "https://github.com/aminbenz/image-generator",
+        "external": true
+      }
+    ],
+    "about_me": "About me",
+    "try_it": "About me",
+    "title": "Hey"
+  }
+}

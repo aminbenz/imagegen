@@ -1,0 +1,21 @@
+{
+  "name": "ImageGen",
+  "title": "AI-Generated Images",
+  "description": "Transform Your Vision into Reality with AI-Generated Images",
+  "referrer": "origin-when-cross-origin",
+  "keywords": ["AI-Generated Images", "AI", "Image generator with AI"],
+  "authors": [{ "name": "Amin Benz", "url": "https://github.com/aminbenz" }],
+  "colorScheme": "dark",
+  "creator": "@aminbenz",
+  "publisher": "@aminbenz",
+  "category": "AI",
+  "type": "website",
+  "url": "https://imagegen.vercel.app",
+  "logo": "/logo.svg",
+  "locale": "en-US",
+  "theme_color": [
+    { "media": "(prefers-color-scheme: light)", "color": "cyan" },
+    { "media": "(prefers-color-scheme: dark)", "color": "black" }
+  ],
+  "color_scheme": "dark"
+}

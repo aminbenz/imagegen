@@ -1,0 +1,131 @@
+:root {
+  --B1: #131314;
+  --B2: #292727;
+}
+
+.skeleton {
+  height: 300px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  cursor: progress;
+}
+
+.skeleton .loading {
+  height: 300px;
+  background-image: linear-gradient(
+    90deg,
+    var(--B1) 0px,
+    var(--B2) 40px,
+    var(--B1) 80px
+  );
+  background-size: 350px;
+  animation: shine-loading-image 4s infinite ease-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes shine-loading-image {
+  0% {
+    background-position: -50px;
+  }
+  40%,
+  100% {
+    background-position: 400px;
+  }
+}
+
+.carousel-container {
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: grid;
+  place-items: center;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(10px);
+}
+
+.carousel-container:hover {
+  cursor: grab;
+}
+.carousel-container:active {
+  cursor: grabbing;
+}
+
+.carousel-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.next,
+.prev,
+.download,
+.full-size,
+.close {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.514);
+  border-radius: 30px;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  z-index: 2;
+}
+
+.carousel-container div:has(svg):hover {
+  background: black;
+}
+
+.next,
+.prev {
+  top: calc(50% - 20px);
+  width: 48px;
+  height: 48px;
+}
+
+.next {
+  right: 15px;
+}
+
+.prev {
+  left: 15px;
+  transform: scale(-1);
+}
+
+.download,
+.full-size {
+  top: 10px;
+  right: 15px;
+}
+
+.full-size {
+  right: 60px;
+}
+
+.close {
+  top: 10px;
+  left: 15px;
+}
+
+.refresh {
+  /* padding: 10px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; */
+}

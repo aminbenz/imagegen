@@ -1,0 +1,49 @@
+{
+  "INDEX": {
+    "app_name": "ImageGen",
+    "navigation": [
+      {
+        "name": "Générateur d'images",
+        "href": "/image-gen"
+      },
+      {
+        "name": "À propos",
+        "href": "/about"
+      },
+      {
+        "name": "Github",
+        "href": "https://github.com/aminbenz/image-generator",
+        "external": true
+      }
+    ],
+    "home_page": {
+      "children": {
+        "t1": "Transformez votre",
+        "t2": "Vision",
+        "t3": "en",
+        "t4": "Réalité",
+        "t5": "avec",
+        "t6": "l'IA"
+      },
+      "description": "Grâce à notre technologie avancée d'IA, vous pouvez rapidement et facilement générer des images de haute qualité qui correspondent parfaitement à votre vision.",
+      "about_me": "À propos de moi",
+      "try_it": "Essayez-le",
+      "chip": "Créé avec amour par"
+    },
+    "imagegen": {
+      "verb": "Générer",
+      "what": "image",
+      "tool": "en utilisant l'IA",
+      "form": {
+        "prompt": "Décrivez votre image",
+        "style": "Style",
+        "n": "Nombre d'images",
+        "size": "Taille",
+        "submit": "Générer"
+      }
+    },
+    "about_page": {
+      "description": "Are you looking for a skilled and versatile developer to help you turn your ideas into reality? Look no further than Amin Benz, the full stack developer who can handle every aspect of your project, from front-end design to back-end coding and everything in between."
+    }
+  }
+}
