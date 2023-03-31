@@ -84,6 +84,13 @@ export default function ImageGen(props: ImageGenProps) {
 
   const sizes: Size[] = useMemo(() => ["1024x1024", "512x512", "256x256"], []);
 
+  const displayError = (message: string) => {
+    setError(message);
+    setTimeout(() => {
+      setError("");
+    }, 5000); // clear error message after 5 seconds
+  };
+
   const onSubmit = async () => {
     setIsLoading(true);
 
@@ -98,9 +105,10 @@ export default function ImageGen(props: ImageGenProps) {
       const { status, result }: any = await fetchSuggestion(payload);
       reset();
       if (status === 500)
-        setError(
+        displayError(
           "Server taya7: Sorry ImageGen is at capacity right now 😐. Please come back soon."
         );
+
       if (status === 200) setData(result);
     } catch (e) {
       console.error(e);

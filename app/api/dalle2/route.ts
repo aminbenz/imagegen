@@ -3,8 +3,11 @@ import { Configuration, OpenAIApi } from "openai";
 
 export async function POST(req: Request, res: Response) {
   const { prompt, n, size } = await req.json();
+  // const configuration = new Configuration({
+  //   apiKey: process.env.OPENAI_SECRET_KEY,
+  // });
   const configuration = new Configuration({
-    apiKey: process.env.OPENAI_SECRET_KEY,
+    apiKey: "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",
   });
   const openai = new OpenAIApi(configuration);
 
