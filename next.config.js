@@ -15,10 +15,7 @@ const nextConfig = {
       "oaidalleapiprodscus.blob.core.windows.net",
     ],
   },
-  i18n: {
-    locales: ["en", "ar", "fr"],
-    defaultLocale: "en",
-  },
+  
 };
 
 module.exports = nextConfig;
