@@ -7,7 +7,8 @@ export default function Home() {
       <div className="flex flex-col items-center justify-center max-w-3xl px-8 mx-auto mt-8 sm:min-h-screen sm:mt-0 sm:px-0">
         <div className="hidden sm:mb-8 sm:flex sm:justify-center">
           <Link
-            href="https://github.com/aminbenz/image-generator/"
+            target="_blank"
+            href="https://aminbenz.vercel.app"
             className="text-zinc-400 relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-zinc-100/10 hover:ring-zinc-100/30 duration-150"
           >
             Created with love by{" "}
@@ -18,13 +19,14 @@ export default function Home() {
         </div>
         <div>
           <h1 className="py-4 text-3xl font-bold tracking-tight text-center text-transparent bg-gradient-to-t bg-clip-text from-zinc-100/50 to-white sm:text-7xl">
-            Transform Your <span className="text-gradient-sky">Vision</span> into{" "}
-            <span className="text-gradient-orange">Reality</span> with <span className="text-gradient-blue">AI-</span>
+            Transform Your <span className="text-gradient-sky">Vision</span>{" "}
+            into <span className="text-gradient-orange">Reality</span> with{" "}
+            <span className="text-gradient-blue">AI-</span>
             Generated Images
           </h1>
           <p className="mt-6 leading-5 text-zinc-600 sm:text-center">
-            With our advanced AI technology, you can easily and quickly generate high-quality images that perfectly
-            match your vision
+            With our advanced AI technology, you can easily and quickly generate
+            high-quality images that perfectly match your vision
           </p>
           <div className="flex flex-col justify-center gap-4 mx-auto mt-8 sm:flex-row sm:max-w-lg ">
             <Link
@@ -43,7 +45,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <h2 className="py-4 text-3xl font-bold text-center text-zinc-300 ">Used and trusted by a growing community</h2>
+      <h2 className="py-4 text-3xl font-bold text-center text-zinc-300 ">
+        Used and trusted by a growing community
+      </h2>
       <Testimonials />
     </div>
   );

@@ -38,16 +38,16 @@ interface ImageGenProps {}
 type Size = "1024x1024" | "512x512" | "256x256";
 
 type Style =
-  | "Retro or vintage"
-  | "Grunge"
   | "Digital Art"
-  | "Modern"
-  | "Flat design"
-  | "Illustrative "
   | "Fantasy"
+  | "Modern"
   | "Pixel Art"
+  | "Illustrative "
+  | "Flat design"
   | "Gothic"
-  | "3D render";
+  | "3D render"
+  | "Grunge"
+  | "Retro or vintage";
 
 // DONE: add download futures and zoom in zoom out
 // TODO: add count in DB of gen images
@@ -68,16 +68,16 @@ export default function ImageGen(props: ImageGenProps) {
   const [error, setError] = useState<string>("");
   const styles: Style[] = useMemo(
     () => [
-      "Retro or vintage",
-      "Grunge",
       "Digital Art",
-      "Modern",
-      "Flat design",
-      "Illustrative ",
       "Fantasy",
+      "Modern",
       "Pixel Art",
+      "Illustrative ",
+      "Flat design",
       "Gothic",
       "3D render",
+      "Grunge",
+      "Retro or vintage",
     ],
     []
   );
@@ -97,6 +97,10 @@ export default function ImageGen(props: ImageGenProps) {
     try {
       const { status, result }: any = await fetchSuggestion(payload);
       reset();
+      if (status === 500)
+        setError(
+          "Server taya7: Sorry ImageGen is at capacity right now 😐. Please come back soon."
+        );
       if (status === 200) setData(result);
     } catch (e) {
       console.error(e);
@@ -270,6 +274,9 @@ export default function ImageGen(props: ImageGenProps) {
                 className="h-full py-0 pl-2 bg-transparent border-0 border-transparent rounded pr-7 text-zinc-500 focus:ring-0 sm:text-sm"
                 onChange={(e) => setStyle(e.target.value)}
               >
+                <option disabled value="">
+                  select style
+                </option>
                 {styles.map((value) => (
                   <option key={value} value={value}>
                     {value}
