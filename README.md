@@ -1,5 +1,5 @@
 <div id="top"></div>
-<!-- PROJECT LOGO -->
+
 
 <div align="center">
     <img src="https://i.ibb.co/pX7tQ3W/android-chrome-512x512.png" alt="Amino logo" width="100" >
@@ -11,7 +11,7 @@ Image Generation Tool with DALL-E2 API
     <a href="https://imagegeen.vercel.app/">View Demo</a>
   </p>
   <img src="https://i.ibb.co/3vpsf9y/smartmockups-lfvd5vff-removebg-preview.png">
-  <!-- thumbnail -->
+  
 </div>
 
 ### Table of content
@@ -87,13 +87,13 @@ my Name - [@aminbenz][me]
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- links -->
+
 
 [repo]: https://github.com/aminbenz/imagegen
 [website]: https://imagegeen.vercel.app
 [me]: https://aminbenz.vercel.app
 
-<!-- TECK -->
+
 
 [html]: https://developer.mozilla.org/en-US/docs/Web/HTML
 [css]: https://developer.mozilla.org/en-US/docs/Web/CSS
